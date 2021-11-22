@@ -1,33 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Countdown Timer</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="./script.js" defer></script>
-</head>
-<body>
-    <h1>Raksha Bandhan</h1>
-    <div class="countdown-container">
-        <div class="span-element days-c">
-            <p class="big-text" id="days">0</p>
-            <span>days</span>
-        </div>
-        <div class="span-element hours-c">
-            <p class="big-text" id="hours">0</p>
-            <span>hours</span>
-        </div>
-        <div class="span-element mins-c">
-            <p class="big-text" id="mins">0</p>
-            <span>mins</span>
-        </div>
-        <div class="span-element seconds-c">
-            <p class="big-text" id="seconds">0</p>
-            <span>seconds</span>
-        </div>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Guessing Emoji</title>
+    <link rel="icon" href="brain.png" sizes="16x16" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="score-card">
+        Score
+        <div id="score">0</div>
+      </div>
+    </header>
+    <div class="gameContainer">
+      <div class="container">
+        <h1 class="text-center text-white display-4">Memory Test</h1>
+      </div>
+      <div class="card" data-image="evilface">
+        <img src="./images/evilface.png" class="front flip" alt="evilface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="evilface">
+        <img src="./images/evilface.png" class="front" alt="evilface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="angryface">
+        <img src="./images/angryface.png" class="front" alt="angryface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="angryface">
+        <img src="./images/angryface.png" class="front" alt="angryface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="coolface">
+        <img src="./images/coolface.png" class="front" alt="coolface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="coolface">
+        <img src="./images/coolface.png" class="front" alt="coolface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="feverface">
+        <img src="./images/feverface.png" class="front" alt="feverface" />
+        <img src="./images/brain.png" class="back" alt="feverface" />
+      </div>
+      <div class="card" data-image="feverface">
+        <img src="./images/feverface.png" class="front" alt="feverface" />
+        <img src="./images/brain.png" class="back" alt="feverface" />
+      </div>
+      <div class="card" data-image="vomitface">
+        <img src="./images/vomitface.png" class="front" alt="vomitface" />
+        <img src="./images/brain.png" class="back" alt="vomitface" />
+      </div>
+      <div class="card" data-image="vomitface">
+        <img src="./images/vomitface.png" class="front" alt="vomitface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="sneezeface">
+        <img src="./images/sneezeface.png" class="front" alt="sneezeface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="sneezeface">
+        <img src="./images/sneezeface.png" class="front" alt="sneezeface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="mindblownface">
+        <img src="./images/mindblownface.png" class="front" alt="mindblownface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="mindblownface">
+        <img src="./images/mindblownface.png" class="front" alt="mindblownface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="thinkingface">
+        <img src="./images/thinkingface.png" class="front" alt="thinkingface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
+      <div class="card" data-image="thinkingface">
+        <img src="./images/thinkingface.png" class="front" alt="thinkingface" />
+        <img src="./images/brain.png" class="back" alt="brain" />
+      </div>
     </div>
-</body>
+    <script src="index.js"></script>
+  </body>
 </html>
